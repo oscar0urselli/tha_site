@@ -28,19 +28,34 @@ export class Planet {
         this.materialParameter = materialParameter;
     }
 
-    createPlanet() {
+    createPlanet(materialType = 'phong') {
         const geometry = new THREE.SphereBufferGeometry(this.dimensions.radius, this.dimensions.widthSegments, this.dimensions.heightSegments);
         const texture = this.materialParameter.texture ? new THREE.TextureLoader().load(this.materialParameter.texture) : undefined;
         const bump = this.materialParameter.bumpMap ? new THREE.TextureLoader().load(this.materialParameter.bumpMap) : undefined;
-        const material = new THREE.MeshPhongMaterial({
-            roughness: this.materialParameter.roughness,
-            metalness: this.materialParameter.metalness,
-            map: texture,
-            transparent: this.materialParameter.transparent,
-            bumpMap: bump,
-            bumpScale: this.materialParameter.bumpScale,
-            blending: this.materialParameter.blending
-        });
+        let material = undefined;
+        if (materialType === 'phong') {
+            material = new THREE.MeshPhongMaterial({
+                roughness: this.materialParameter.roughness,
+                metalness: this.materialParameter.metalness,
+                map: texture,
+                transparent: this.materialParameter.transparent,
+                bumpMap: bump,
+                bumpScale: this.materialParameter.bumpScale,
+                blending: this.materialParameter.blending
+            });
+        }
+        else if (materialType === 'lambert') {
+            material = new THREE.MeshLambertMaterial({
+                roughness: this.materialParameter.roughness,
+                metalness: this.materialParameter.metalness,
+                map: texture,
+                transparent: this.materialParameter.transparent,
+                bumpMap: bump,
+                bumpScale: this.materialParameter.bumpScale,
+                blending: this.materialParameter.blending
+            });
+        }
+        
         const planet = new THREE.Mesh(geometry, material);
         planet.receiveShadow = true;
         planet.castShadow = true;

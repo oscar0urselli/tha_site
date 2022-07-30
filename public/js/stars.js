@@ -39,7 +39,7 @@ export class StarsGenerator {
             const geometry = new THREE.IcosahedronBufferGeometry();
             
             let randomColorIndex = THREE.MathUtils.randInt(0, this.colorIntervals.length - 1);
-            const material = new THREE.MeshStandardMaterial({
+            const material = new THREE.MeshBasicMaterial({
                 color: THREE.MathUtils.randInt(this.colorIntervals[randomColorIndex][0], this.colorIntervals[randomColorIndex][1])
             });
             const star = new THREE.Mesh(geometry, material);

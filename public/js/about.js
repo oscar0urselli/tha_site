@@ -27,7 +27,9 @@ camera.position.set(-200, 0, 200);
 
 const renderer = new THREE.WebGLRenderer({
     antialias: true,
-    canvas: document.querySelector('#bg')
+    canvas: document.querySelector('#bg'),
+    powerPreference: 'high-performance',
+    stencil: false
 });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -119,7 +121,7 @@ const earth = new Planet({radius: 1.27, widthSegments: 48, heightSegments: 48}, 
 // Earth's clouds
 const earthClouds = new Planet({radius: 1.29, widthSegments: 48, heightSegments: 48}, new THREE.Vector3(0, 0, 0), 23, {texture: '/public/textures/8k_earth_clouds.jpg', transparent: true, blending: THREE.AdditiveBlending}).createPlanet();
 // Moon
-const moonPivot = new THREE.Object3D(), moon = new Planet({radius: 0.348, widthSegments: 20, heightSegments: 20}, new THREE.Vector3(0, 0, 0.384 * 40), 6.7, {texture: '/public/textures/8k_moon.jpg'}).createPlanet();
+const moonPivot = new THREE.Object3D(), moon = new Planet({radius: 0.348, widthSegments: 20, heightSegments: 20}, new THREE.Vector3(0, 0, 0.384 * 40), 6.7, {texture: '/public/textures/2k_moon.jpg'}).createPlanet();
 moonPivot.rotation.set(THREE.MathUtils.degToRad(5.14), 0, 0);
 moonPivot.add(moon);
 earth.add(earthClouds, moonPivot);
@@ -127,26 +129,26 @@ scene.add(earth);
 
 
 // Mars
-const mars = new Planet({ radius: 0.7, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 227.8 * 1.5), 25, {texture: '/public/textures/8k_mars.jpg'}).createPlanet();
+const mars = new Planet({ radius: 0.7, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 227.8 * 1.5), 25, {texture: '/public/textures/8k_mars.jpg'}).createPlanet('lambert');
 scene.add(mars);
 
 
 // Jupiter
-const jupiter = new Planet({ radius: 14.3, widthSegments: 64, heightSegments: 64 }, new THREE.Vector3(0, 0, 778.5), 3, {texture: '/public/textures/8k_jupiter.jpg'}).createPlanet();
+const jupiter = new Planet({ radius: 14.3, widthSegments: 64, heightSegments: 64 }, new THREE.Vector3(0, 0, 778.5), 3, {texture: '/public/textures/8k_jupiter.jpg'}).createPlanet('lambert');
 // Io
-const ioPivot = new THREE.Object3D(), io = new Planet({radius: 0.364, widthSegments: 20, heightSegments: 20}, new THREE.Vector3(0, 0, 0.422 * 75), 0, {texture: '/public/textures/2048x1024_io.jpg'}, 2).createPlanet();
+const ioPivot = new THREE.Object3D(), io = new Planet({radius: 0.364, widthSegments: 20, heightSegments: 20}, new THREE.Vector3(0, 0, 0.422 * 75), 0, {texture: '/public/textures/512x256_io.jpg'}).createPlanet();
 ioPivot.rotation.set(THREE.MathUtils.degToRad(2.21), 0, 0);
 ioPivot.add(io);
 // Europa
-const europaPivot = new THREE.Object3D(), europa = new Planet({radius: 0.312, widthSegments: 18, heightSegments: 18}, new THREE.Vector3(0, 0, -0.671 * 65), 0, {texture: '/public/textures/2048x1024_europa.jpg'}, 2).createPlanet();
+const europaPivot = new THREE.Object3D(), europa = new Planet({radius: 0.312, widthSegments: 18, heightSegments: 18}, new THREE.Vector3(0, 0, -0.671 * 65), 0, {texture: '/public/textures/512x256_europa.jpg'}).createPlanet();
 europaPivot.rotation.set(THREE.MathUtils.degToRad(1.781), 0, 0);
 europaPivot.add(europa);
 // Ganymede
-const ganymedePivot = new THREE.Object3D(), ganymede = new Planet({radius: 0.527, widthSegments: 26, heightSegments: 26}, new THREE.Vector3(0, 0, 1.07 * 70), 0, {texture: '/public/textures/2048x1024_ganymede.jpg'}, 2).createPlanet();
+const ganymedePivot = new THREE.Object3D(), ganymede = new Planet({radius: 0.527, widthSegments: 26, heightSegments: 26}, new THREE.Vector3(0, 0, 1.07 * 70), 0, {texture: '/public/textures/512x256_ganymede.jpg'}).createPlanet();
 ganymedePivot.rotation.set(THREE.MathUtils.degToRad(2.214), 0, 0);
 ganymedePivot.add(ganymede);
 // Callisto
-const callistoPivot = new THREE.Object3D(), callisto = new Planet({radius: 0.482, widthSegments: 22, heightSegments: 22}, new THREE.Vector3(0, 0, -1.88 * 70), 0, {texture: '/public/textures/2048x1024_callisto.jpg'}, 2).createPlanet();
+const callistoPivot = new THREE.Object3D(), callisto = new Planet({radius: 0.482, widthSegments: 22, heightSegments: 22}, new THREE.Vector3(0, 0, -1.88 * 70), 0, {texture: '/public/textures/512x256_callisto.jpg'}).createPlanet();
 callistoPivot.rotation.set(THREE.MathUtils.degToRad(2.017), 0, 0);
 callistoPivot.add(callisto);
 jupiter.add(ioPivot, europaPivot, ganymedePivot, callisto);
@@ -154,17 +156,16 @@ scene.add(jupiter);
 
 
 // Saturn
-const saturn = new Planet({ radius: 12, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 1433), -27, {texture: '/public/textures/8k_saturn.jpg'}).createPlanet();
+const saturn = new Planet({ radius: 12, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 1433), -27, {texture: '/public/textures/8k_saturn.jpg'}).createPlanet('lambert');
 let titanPivot, titan;
 new GLTFLoader().load('/public/3D-Models/Saturn.glb', (gltf) => {
     const saturnRing1 = gltf.scene.children[0].clone();
     saturnRing1.scale.set(0.025, 0.025, 0.025);
-    saturnRing1.layers.set(3);
     saturn.add(saturnRing1);
 
     // Titan
     titanPivot = new THREE.Object3D();
-    titan = new Planet({radius: 0.514, widthSegments: 24, heightSegments: 24}, new THREE.Vector3(0, 0, 1.222 * 60), 0, {texture: '/public/textures/8k_titan.jpg'}, 3).createPlanet();
+    titan = new Planet({radius: 0.514, widthSegments: 24, heightSegments: 24}, new THREE.Vector3(0, 0, 1.222 * 60), 0, {texture: '/public/textures/8k_titan.jpg'}).createPlanet();
     titanPivot.rotation.set(THREE.MathUtils.degToRad(-1 * (27 + 0.35)), 0, 0);
     titanPivot.add(titan);
     saturn.add(titanPivot);
@@ -175,7 +176,7 @@ new GLTFLoader().load('/public/3D-Models/Saturn.glb', (gltf) => {
 
 
 // Uranus
-const uranus = new Planet({ radius: 5, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 2900), 98, {texture: '/public/textures/2k_uranus.jpg'}).createPlanet();
+const uranus = new Planet({ radius: 5, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 2900), 98, {texture: '/public/textures/2k_uranus.jpg'}).createPlanet('lambert');
 scene.add(uranus);
 
 
@@ -208,33 +209,14 @@ planetAmbientLight.layers.enableAll();
 planetAmbientLight.layers.disable(1);
 scene.add(planetAmbientLight);
 
-
 // Sunlight
-const pointLight = new THREE.PointLight(0xffffff, 1);
-pointLight.castShadow = true;
-pointLight.shadow.bias = 0.0001;
-pointLight.shadowDarkness = 0.2;
-pointLight.shadow.camera.visible = true;
-pointLight.shadow.mapSize.width = 2048;
-pointLight.shadow.mapSize.height = 2048;
-pointLight.position.set(0, 0, 0);
-scene.add(pointLight);
-
-
-// Directional light Jupiter, Saturn, Uranus and Neptune
-const pDirectLight = [jupiter, saturn, uranus, neptune];
-for (let i = 2; i < 6; i++) {
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-    directionalLight.castShadow = true;
-    directionalLight.shadow.bias = 0.0001;
-    directionalLight.shadowDarkness = 0.2;
-    directionalLight.shadow.camera.visible = true;
-    directionalLight.position.set(0, 0, 0);
-    directionalLight.target = pDirectLight[i - 2];
-    directionalLight.layers.set(i);
-    pDirectLight[i - 2].layers.set(i);
-    scene.add(directionalLight);
-}
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+directionalLight.castShadow = true;
+directionalLight.shadow.bias = 0.0001;
+directionalLight.shadowDarkness = 0.2;
+directionalLight.shadow.camera.visible = true;
+directionalLight.position.set(0, 0, 0);
+scene.add(directionalLight);
 //#endregion
 
 
@@ -320,9 +302,6 @@ function planetRotation() {
     europa.rotation.y += 0.0005;
     ganymede.rotation.y += 0.0005;
     callisto.rotation.y += 0.0005;
-    saturn.rotation.y += 0.0001;
-    titan.rotation.y += 0.0005;
-    uranus.rotation.y += 0.0001;
     neptune.rotation.y += 0.0005;
 }
 
@@ -337,8 +316,13 @@ function planetRevolution() {
 
 function isVisible() {
     exploration.forEach(p => {
-        if (p.name === exploration[focusedPlanet].name || p.name === 'Sun') p.obj.visible = true;
-        else p.obj.visible = false;
+        if (p.name === exploration[focusedPlanet].name || p.name === 'Sun') {
+            p.obj.visible = true;
+            directionalLight.target = p.obj;
+        }
+        else {
+            p.obj.visible = false;
+        }
     });
 }
 
@@ -359,11 +343,6 @@ function animate() {
     renderer.clearDepth();
     camera.layers.set(0);
     renderer.render(scene, camera);
-
-    for (let layer = 2; layer < 6; layer++) {
-        camera.layers.set(layer);
-        renderer.render(scene, camera);
-    }
 }
 //#endregion
 

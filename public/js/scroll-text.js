@@ -20,7 +20,7 @@ const content = [
         `<p class="text-center">During the same period of the Olicyber, I also took part in <a href="https://cyberchallenge.it/" class="text-decoration-none">this project</a> for universities. Here I passed the selection and entered the official team of the <a href="http://www.poliba.it/" class="text-decoration-none">Politecnico di Bari</a> with other 5 students. I had the opportunity to learn about new technologies and with the memebers of the team we founded a CTF team called <a href="https://github.com/Pwnzer0tt1" class="text-decoration-none">Pwnzer0tt1</a>.</p>`
     ], 
     [
-        `<p class="fs-1 text-center">Tech</p>`,
+        `<p class="fs-1 text-center">Skills</p>`,
         `<p class="fs-3 text-center">Programming languages</p>`,
         `<p class="text-center">For the moment the programming languages I know the most (in order of proficiency) are: Python, C++, JavaScript and C#. But in the last month I started learning Rust.</p>`,
         `<p class="fs-3 text-center">Database</p>`,
