@@ -311,7 +311,9 @@ function planetRevolution() {
     europaPivot.rotation.y += 0.0002;
     ganymedePivot.rotation.y += 0.0004;
     callistoPivot.rotation.y += 0.0007;
-    titanPivot.rotation.y += 0.0003;
+    if (titanPivot) {
+        titanPivot.rotation.y += 0.0003;
+    }
 }
 
 function isVisible() {
