@@ -1,0 +1,27 @@
+{
+  "name": "tha_site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscar0urselli/tha_site.git"
+  },
+  "author": "Oscar Urselli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oscar0urselli/tha_site/issues"
+  },
+  "homepage": "https://github.com/oscar0urselli/tha_site#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  }
+}
