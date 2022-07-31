@@ -104,14 +104,14 @@ starsGenerator.addStars(scene, (star) => scene.add(star));
 
 
 // Mercury
-const mercury = new Planet({ radius: 0.49, widthSegments: 24, heightSegments: 24 }, new THREE.Vector3(0, 0, 58 * 3), 0.1, {texture: '/public/textures/8k_mercury.jpg'}).createPlanet();
+const mercury = new Planet({ radius: 0.49, widthSegments: 24, heightSegments: 24 }, new THREE.Vector3(0, 0, 58 * 3), 0.1, {texture: '/public/textures/2k_mercury.jpg'}).createPlanet();
 scene.add(mercury);
 
 
 // Venus
-const venus = new Planet({ radius: 1.2, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 108 * 2), 177, {texture: '/public/textures/8k_venus_surface.jpg'}).createPlanet();
+const venus = new Planet({ radius: 1.2, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 108 * 2), 177, {texture: '/public/textures/2k_venus_surface.jpg'}).createPlanet();
 // Venus's atmosphere
-const venusAtmosphere = new Planet({radius: 1.21, widthSegments: 36, heightSegments: 36}, new THREE.Vector3(0, 0, 0), 177, {texture: '/public/textures/4k_venus_atmosphere.jpg', transparent: true, blending: THREE.MultiplyBlending}).createPlanet();
+const venusAtmosphere = new Planet({radius: 1.21, widthSegments: 36, heightSegments: 36}, new THREE.Vector3(0, 0, 0), 177, {texture: '/public/textures/2k_venus_atmosphere.jpg', transparent: true, blending: THREE.MultiplyBlending}).createPlanet();
 venus.add(venusAtmosphere);
 scene.add(venus);
 
@@ -156,7 +156,7 @@ scene.add(jupiter);
 
 
 // Saturn
-const saturn = new Planet({ radius: 12, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 1433), -27, {texture: '/public/textures/8k_saturn.jpg'}).createPlanet('lambert');
+const saturn = new Planet({ radius: 12, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 1433), -27, {texture: '/public/textures/2k_saturn.jpg'}).createPlanet('lambert');
 let titanPivot, titan;
 new GLTFLoader().load('/public/3D-Models/Saturn.glb', (gltf) => {
     const saturnRing1 = gltf.scene.children[0].clone();
@@ -165,7 +165,7 @@ new GLTFLoader().load('/public/3D-Models/Saturn.glb', (gltf) => {
 
     // Titan
     titanPivot = new THREE.Object3D();
-    titan = new Planet({radius: 0.514, widthSegments: 24, heightSegments: 24}, new THREE.Vector3(0, 0, 1.222 * 60), 0, {texture: '/public/textures/8k_titan.jpg'}).createPlanet();
+    titan = new Planet({radius: 0.514, widthSegments: 24, heightSegments: 24}, new THREE.Vector3(0, 0, 1.222 * 60), 0, {texture: '/public/textures/2000x1000_titan.jpg'}).createPlanet();
     titanPivot.rotation.set(THREE.MathUtils.degToRad(-1 * (27 + 0.35)), 0, 0);
     titanPivot.add(titan);
     saturn.add(titanPivot);
