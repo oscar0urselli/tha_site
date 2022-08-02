@@ -5,6 +5,10 @@ html(lang="en")
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
         meta(name="description" content="Here you can find all my projects. This site serves more like a portfolio rather than a personal blog.")
+        meta(property="og:title" content=sectionName + ' | Oscar Urselli')
+        meta(property="og:type" content="website")
+        meta(property="og:url" content="https://oscarurselli.com/home/")
+        meta(property="og:image" content="https://oscarurselli.com/static/2k_stars_milky_way.jpg")
 
         //- Global site tag (gtag.js) - Google Analytics
         script(async src="https://www.googletagmanager.com/gtag/js?id=G-Q9NZ2SP6MC")
@@ -26,7 +30,7 @@ html(lang="en")
         //- Navbar
         include includes/navbar.pug
 
-        div(class="container" style="min-height: 100vh;")
+        div(class="container" style="min-height: 100vh;" itemscope itemtype="https://schema.org/WebSite")
             block content
 
         //- Footer

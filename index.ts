@@ -12,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 const app: express.Express = express();
 app.use('/static', express.static(path.join(__dirname, '../static')));
+app.use('/', express.static(path.join(__dirname, '../public')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 //app.use(cookieParser());

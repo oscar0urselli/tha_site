@@ -12,6 +12,7 @@ dotenv_1.default.config();
 const PORT = process.env.PORT || 3000;
 const app = (0, express_1.default)();
 app.use('/static', express_1.default.static(path_1.default.join(__dirname, '../static')));
+app.use('/', express_1.default.static(path_1.default.join(__dirname, '../public')));
 app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 //app.use(cookieParser());

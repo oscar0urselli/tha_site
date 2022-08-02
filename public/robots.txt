@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /static/
+
+Sitemap: https://www.oscarurselli.com/sitemap.xml
+Sitemap: http://www.oscarurselli.com/sitemap.xml
+Sitemap: https://oscarurselli.com/sitemap.xml
+Sitemap: http://oscarurselli.com/sitemap.xml
