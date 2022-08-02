@@ -99,7 +99,7 @@ scene.add(sun);
 
 
 // Stars
-const starsGenerator = new StarsGenerator(3000, [[0x50a82a, 0xd15824], [0x223070, 0x56cfd1], [0x8b1691, 0xad1347], [0x10a352, 0xcad624]], {X: {min: 200, max: 5500}, Y: {min: 200, max: 5500}, Z: {min: 200, max: 5500}}, {radius: { min: 0.5, max: 2.5 }, widthSegments: 16, heightSegments: 16}, 1);
+const starsGenerator = new StarsGenerator(1500, [[0x50a82a, 0xd15824], [0x223070, 0x56cfd1], [0x8b1691, 0xad1347], [0x10a352, 0xcad624]], {X: {min: 200, max: 5500}, Y: {min: 200, max: 5500}, Z: {min: 200, max: 5500}}, {radius: { min: 0.5, max: 2.5 }, widthSegments: 16, heightSegments: 16}, 1);
 starsGenerator.addStars(scene, (star) => scene.add(star));
 
 
@@ -162,7 +162,7 @@ new GLTFLoader().load('/static/3D-Models/Saturn.glb', (gltf) => {
     const saturnRing1 = gltf.scene.children[0].clone();
     saturnRing1.scale.set(0.025, 0.025, 0.025);
     saturn.add(saturnRing1);
-
+    
     // Titan
     titanPivot = new THREE.Object3D();
     titan = new Planet({radius: 0.514, widthSegments: 24, heightSegments: 24}, new THREE.Vector3(0, 0, 1.222 * 60), 0, {texture: '/static/textures/2000x1000_titan.jpg'}).createPlanet();

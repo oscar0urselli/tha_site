@@ -9,7 +9,7 @@ const content = [
     ], 
     [
         `<p class="fs-1 text-center">Liceo statale Giuseppe Moscati 2018-2023</p>`,
-        `<p class="text-center">I had a staring approach with computer programming, writing my first "Hello World" in C++. Thanks to the school, during a project I had the possibility to create my first web site using Joomla. Also I had the possibility to take part in projects about cybersecurity.</p>`
+        `<p class="text-center">Here I had a starting approach with computer programming, writing my first "Hello World" in C++. Thanks to the school, during a project I had the possibility to create my first web site using Joomla. Also I had the possibility to take part in projects about cybersecurity.</p>`
     ], 
     [
         `<p class="fs-1 text-center">Olicyber 2022</p>`,
@@ -22,9 +22,9 @@ const content = [
     [
         `<p class="fs-1 text-center">Skills</p>`,
         `<p class="fs-3 text-center">Programming languages</p>`,
-        `<p class="text-center">For the moment the programming languages I know the most (in order of proficiency) are: Python, C++, JavaScript and C#. But in the last month I started learning Rust.</p>`,
+        `<p class="text-center">For the moment the programming languages I know the most (in order of proficiency) are: Python, C++, JavaScript and C#.</p>`,
         `<p class="fs-3 text-center">Database</p>`,
-        `<p class="text-center">MySQL was my first approach with SQL and DB in general, later I extended to SQLite and Redis. I plan to learn about NoSQL DB such as MongoDB.</p>`,
+        `<p class="text-center">MySQL was my first approach with SQL and DB in general, later I extended to SQLite and Redis.</p>`,
         `<p class="fs-3 text-center">Arduino</p>`,
         `<p class="text-center">In the free time I like playing with Arduino and little projects of eletronic.</p>`
     ], 

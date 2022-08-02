@@ -1,4 +1,15 @@
 extends index.pug
 
+block css
+    style.
+        .col-sm-6 {
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+
 block content
-    h1(style="color: white;") WORK IN PROGRESS...
+    div#cards(class="row")
+        
+block javascript
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
+    script(src="/static/js/cards.js")
