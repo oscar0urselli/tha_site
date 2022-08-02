@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc && node src/index.js"
+    "pretest": "npx tsc",
+    "test": "node src/index.js",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
