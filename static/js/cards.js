@@ -21,13 +21,6 @@ const cards = [
         type: 'LAB'
     },
     {
-        title: 'web-server',
-        description: 'Creation of a web server without using frameworks like Express.js',
-        repository: 'https://github.com/oscar0urselli/web-server',
-        technology: ['JavaScript', 'Node.js'],
-        type: 'LAB'
-    },
-    {
         title: 'This site',
         description: 'My personal portfolio web site.',
         repository: '/',
@@ -39,6 +32,13 @@ const cards = [
         description: '3D graphics is cool so used it.',
         repository: '/about',
         technology: ['JavaScript', 'three.js', 'GSAP'],
+        type: 'WORK'
+    },
+    {
+        title: 'Progettiamo il nostro futuro',
+        description: 'Site for a school project.',
+        repository: 'https://costruiamoilnostrofuturo.com/',
+        technology: ['JavaScript', 'Express.js', 'Heroku', 'Telegram'],
         type: 'WORK'
     }
 ];
@@ -60,7 +60,8 @@ const badgesBg = {
     'Arduino': '#00797e',
     'C#': '#178600',
     '.NET Core': '#5a1e5c',
-    'Xamarin': '#0b7eb0'
+    'Xamarin': '#0b7eb0',
+    'Telegram': '#46a2e0'
 };
 
 for (let i = cards.length - 1; i >= 0; i--) {
