@@ -1,7 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import path from 'path';
-//import cookieParser from 'cookie-parser';
 import compression from 'compression';
 
 
@@ -21,6 +20,10 @@ app.set('views', path.join(__dirname, '../views'));
 app.set('view engine', 'pug');
 app.disable('x-powered-by');
 
+
+app.use((req: express.Request, res: express.Response, next: express.NextFunction) => {
+    res.set('Cache-Control', 'public, max-age=604800');
+});
 
 app.get('/', (req: express.Request, res: express.Response) => {
     res.redirect('/home');

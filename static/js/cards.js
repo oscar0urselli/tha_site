@@ -77,7 +77,7 @@ for (let i = cards.length - 1; i >= 0; i--) {
                 <hr class="text-grey-50">
                 <h5 class="card-title">${cards[i].title}</h5>
                 <p class="card-text">${cards[i].description}</p>
-                <a href="${cards[i].repository}" class="btn btn-primary">Explore</a>
+                <a title="Repository" href="${cards[i].repository}" class="btn btn-primary">Explore</a>
                 <br>
                 <br>
                 ${badges}

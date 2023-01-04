@@ -13,11 +13,11 @@ const content = [
     ], 
     [
         `<p class="fs-1 text-center">Olicyber 2022</p>`,
-        `<p class="text-center"><a href="https://olicyber.it/" class="text-decoration-none">This project</a> was my first encounter with cybersecurity outside Cheat Engine 🙃. I managed to pass all the selection and obtain the bronze medal in the national final.</p>`
+        `<p class="text-center"><a title="Olicyber" href="https://olicyber.it/" class="text-decoration-none">This project</a> was my first encounter with cybersecurity outside Cheat Engine 🙃. I managed to pass all the selection and obtain the bronze medal in the national final.</p>`
     ], 
     [
         `<p class="fs-1 text-center">CyberChallenge.IT 2022</p>`,
-        `<p class="text-center">During the same period of the Olicyber, I also took part in <a href="https://cyberchallenge.it/" class="text-decoration-none">this project</a> for universities. Here I passed the selection and entered the official team of the <a href="http://www.poliba.it/" class="text-decoration-none">Politecnico di Bari</a> with other 5 students. I had the opportunity to learn about new technologies and with the memebers of the team we founded a CTF team called <a href="https://github.com/Pwnzer0tt1" class="text-decoration-none">Pwnzer0tt1</a>.</p>`
+        `<p class="text-center">During the same period of the Olicyber, I also took part in <a title="CyberChallenge" href="https://cyberchallenge.it/" class="text-decoration-none">this project</a> for universities. Here I passed the selection and entered the official team of the <a title="PoliBa" href="http://www.poliba.it/" class="text-decoration-none">Politecnico di Bari</a> with other 5 students. I had the opportunity to learn about new technologies and with the memebers of the team we founded a CTF team called <a title="Pwnzer0tt1" href="https://github.com/Pwnzer0tt1" class="text-decoration-none">Pwnzer0tt1</a>.</p>`
     ], 
     [
         `<p class="fs-1 text-center">Skills</p>`,
