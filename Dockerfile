@@ -1,6 +1,8 @@
 FROM node:16
 
-COPY ./* /app
+COPY ./ /app/
+
+WORKDIR /app
 
 RUN npm install
 

@@ -94,7 +94,7 @@ bloomComposer.renderToScreen = true;
 bloomComposer.addPass(rendererScene);
 bloomComposer.addPass(bloomPass);
 
-const sun = new Planet({ radius: 140, widthSegments: 64, heightSegments: 64 }, new THREE.Vector3(0, 0, 0), 6, {texture: '/static/textures/8k_sun.jpg'}, 1).createPlanet();
+const sun = new Planet({ radius: 140, widthSegments: 64, heightSegments: 64 }, new THREE.Vector3(0, 0, 0), 6, {texture: '/static/textures/sun.jpg'}, 1).createPlanet();
 scene.add(sun);
 
 
@@ -104,24 +104,24 @@ starsGenerator.addStars(scene, (star) => scene.add(star));
 
 
 // Mercury
-const mercury = new Planet({ radius: 0.49, widthSegments: 24, heightSegments: 24 }, new THREE.Vector3(0, 0, 58 * 3), 0.1, {texture: '/static/textures/2k_mercury.jpg'}).createPlanet();
+const mercury = new Planet({ radius: 0.49, widthSegments: 24, heightSegments: 24 }, new THREE.Vector3(0, 0, 58 * 3), 0.1, {texture: '/static/textures/mercury.jpg'}).createPlanet();
 scene.add(mercury);
 
 
 // Venus
-const venus = new Planet({ radius: 1.2, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 108 * 2), 177, {texture: '/static/textures/2k_venus_surface.jpg'}).createPlanet();
+const venus = new Planet({ radius: 1.2, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 108 * 2), 177, {texture: '/static/textures/venus_surface.jpg'}).createPlanet();
 // Venus's atmosphere
-const venusAtmosphere = new Planet({radius: 1.21, widthSegments: 36, heightSegments: 36}, new THREE.Vector3(0, 0, 0), 177, {texture: '/static/textures/2k_venus_atmosphere.jpg', transparent: true, blending: THREE.MultiplyBlending}).createPlanet();
+const venusAtmosphere = new Planet({radius: 1.21, widthSegments: 36, heightSegments: 36}, new THREE.Vector3(0, 0, 0), 177, {texture: '/static/textures/venus_atmosphere.jpg', transparent: true, blending: THREE.MultiplyBlending}).createPlanet();
 venus.add(venusAtmosphere);
 scene.add(venus);
 
 
 // Earth
-const earth = new Planet({radius: 1.27, widthSegments: 48, heightSegments: 48}, new THREE.Vector3(0, 0, 149.5 * 2), 23, {texture: '/static/textures/8k_earth_daymap.jpg', bumpMap: '/static/textures/8k_earth_bump.jpg', bumpScale: 0.3, roughness: 1, metalness: 0}).createPlanet();
+const earth = new Planet({radius: 1.27, widthSegments: 48, heightSegments: 48}, new THREE.Vector3(0, 0, 149.5 * 2), 23, {texture: '/static/textures/earth_daymap.jpg', bumpMap: '/static/textures/earth_bump.jpg', bumpScale: 0.3, roughness: 1, metalness: 0}).createPlanet();
 // Earth's clouds
-const earthClouds = new Planet({radius: 1.29, widthSegments: 48, heightSegments: 48}, new THREE.Vector3(0, 0, 0), 23, {texture: '/static/textures/8k_earth_clouds.jpg', transparent: true, blending: THREE.AdditiveBlending}).createPlanet();
+const earthClouds = new Planet({radius: 1.29, widthSegments: 48, heightSegments: 48}, new THREE.Vector3(0, 0, 0), 23, {texture: '/static/textures/earth_clouds.jpg', transparent: true, blending: THREE.AdditiveBlending}).createPlanet();
 // Moon
-const moonPivot = new THREE.Object3D(), moon = new Planet({radius: 0.348, widthSegments: 20, heightSegments: 20}, new THREE.Vector3(0, 0, 0.384 * 40), 6.7, {texture: '/static/textures/2k_moon.jpg'}).createPlanet();
+const moonPivot = new THREE.Object3D(), moon = new Planet({radius: 0.348, widthSegments: 20, heightSegments: 20}, new THREE.Vector3(0, 0, 0.384 * 40), 6.7, {texture: '/static/textures/moon.jpg'}).createPlanet();
 moonPivot.rotation.set(THREE.MathUtils.degToRad(5.14), 0, 0);
 moonPivot.add(moon);
 earth.add(earthClouds, moonPivot);
@@ -129,26 +129,26 @@ scene.add(earth);
 
 
 // Mars
-const mars = new Planet({ radius: 0.7, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 227.8 * 1.5), 25, {texture: '/static/textures/8k_mars.jpg'}).createPlanet('lambert');
+const mars = new Planet({ radius: 0.7, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 227.8 * 1.5), 25, {texture: '/static/textures/mars.jpg'}).createPlanet('lambert');
 scene.add(mars);
 
 
 // Jupiter
-const jupiter = new Planet({ radius: 14.3, widthSegments: 64, heightSegments: 64 }, new THREE.Vector3(0, 0, 778.5), 3, {texture: '/static/textures/8k_jupiter.jpg'}).createPlanet('lambert');
+const jupiter = new Planet({ radius: 14.3, widthSegments: 64, heightSegments: 64 }, new THREE.Vector3(0, 0, 778.5), 3, {texture: '/static/textures/jupiter.jpg'}).createPlanet('lambert');
 // Io
-const ioPivot = new THREE.Object3D(), io = new Planet({radius: 0.364, widthSegments: 20, heightSegments: 20}, new THREE.Vector3(0, 0, 0.422 * 75), 0, {texture: '/static/textures/512x256_io.jpg'}).createPlanet();
+const ioPivot = new THREE.Object3D(), io = new Planet({radius: 0.364, widthSegments: 20, heightSegments: 20}, new THREE.Vector3(0, 0, 0.422 * 75), 0, {texture: '/static/textures/io.jpg'}).createPlanet();
 ioPivot.rotation.set(THREE.MathUtils.degToRad(2.21), 0, 0);
 ioPivot.add(io);
 // Europa
-const europaPivot = new THREE.Object3D(), europa = new Planet({radius: 0.312, widthSegments: 18, heightSegments: 18}, new THREE.Vector3(0, 0, -0.671 * 65), 0, {texture: '/static/textures/512x256_europa.jpg'}).createPlanet();
+const europaPivot = new THREE.Object3D(), europa = new Planet({radius: 0.312, widthSegments: 18, heightSegments: 18}, new THREE.Vector3(0, 0, -0.671 * 65), 0, {texture: '/static/textures/europa.jpg'}).createPlanet();
 europaPivot.rotation.set(THREE.MathUtils.degToRad(1.781), 0, 0);
 europaPivot.add(europa);
 // Ganymede
-const ganymedePivot = new THREE.Object3D(), ganymede = new Planet({radius: 0.527, widthSegments: 26, heightSegments: 26}, new THREE.Vector3(0, 0, 1.07 * 70), 0, {texture: '/static/textures/512x256_ganymede.jpg'}).createPlanet();
+const ganymedePivot = new THREE.Object3D(), ganymede = new Planet({radius: 0.527, widthSegments: 26, heightSegments: 26}, new THREE.Vector3(0, 0, 1.07 * 70), 0, {texture: '/static/textures/ganymede.jpg'}).createPlanet();
 ganymedePivot.rotation.set(THREE.MathUtils.degToRad(2.214), 0, 0);
 ganymedePivot.add(ganymede);
 // Callisto
-const callistoPivot = new THREE.Object3D(), callisto = new Planet({radius: 0.482, widthSegments: 22, heightSegments: 22}, new THREE.Vector3(0, 0, -1.88 * 70), 0, {texture: '/static/textures/512x256_callisto.jpg'}).createPlanet();
+const callistoPivot = new THREE.Object3D(), callisto = new Planet({radius: 0.482, widthSegments: 22, heightSegments: 22}, new THREE.Vector3(0, 0, -1.88 * 70), 0, {texture: '/static/textures/callisto.jpg'}).createPlanet();
 callistoPivot.rotation.set(THREE.MathUtils.degToRad(2.017), 0, 0);
 callistoPivot.add(callisto);
 jupiter.add(ioPivot, europaPivot, ganymedePivot, callisto);
@@ -156,7 +156,7 @@ scene.add(jupiter);
 
 
 // Saturn
-const saturn = new Planet({ radius: 12, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 1433), -27, {texture: '/static/textures/2k_saturn.jpg'}).createPlanet('lambert');
+const saturn = new Planet({ radius: 12, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 1433), -27, {texture: '/static/textures/saturn.jpg'}).createPlanet('lambert');
 let titanPivot, titan;
 new GLTFLoader().load('/static/3D-Models/Saturn.glb', (gltf) => {
     const saturnRing1 = gltf.scene.children[0].clone();
@@ -165,7 +165,7 @@ new GLTFLoader().load('/static/3D-Models/Saturn.glb', (gltf) => {
     
     // Titan
     titanPivot = new THREE.Object3D();
-    titan = new Planet({radius: 0.514, widthSegments: 24, heightSegments: 24}, new THREE.Vector3(0, 0, 1.222 * 60), 0, {texture: '/static/textures/2000x1000_titan.jpg'}).createPlanet();
+    titan = new Planet({radius: 0.514, widthSegments: 24, heightSegments: 24}, new THREE.Vector3(0, 0, 1.222 * 60), 0, {texture: '/static/textures/titan.jpg'}).createPlanet();
     titanPivot.rotation.set(THREE.MathUtils.degToRad(-1 * (27 + 0.35)), 0, 0);
     titanPivot.add(titan);
     saturn.add(titanPivot);
@@ -176,12 +176,12 @@ new GLTFLoader().load('/static/3D-Models/Saturn.glb', (gltf) => {
 
 
 // Uranus
-const uranus = new Planet({ radius: 5, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 2900), 98, {texture: '/static/textures/2k_uranus.jpg'}).createPlanet('lambert');
+const uranus = new Planet({ radius: 5, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 2900), 98, {texture: '/static/textures/uranus.jpg'}).createPlanet('lambert');
 scene.add(uranus);
 
 
 // Neptune
-const neptune = new Planet({ radius: 5, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 4500), 30, {texture: '/static/textures/2k_neptune.jpg'}).createPlanet();
+const neptune = new Planet({ radius: 5, widthSegments: 36, heightSegments: 36 }, new THREE.Vector3(0, 0, 4500), 30, {texture: '/static/textures/neptune.jpg'}).createPlanet();
 scene.add(neptune);
 
 
