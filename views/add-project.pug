@@ -1,0 +1,36 @@
+extends index.pug 
+
+block content 
+    div(class="my-3 me-3 p-4 bg-body rounded shadow-lg")
+        nav(class="navbar bg-body-tertiary")
+            div(class="container-fluid")
+                div
+                form(class="d-flex" role="search")
+                    a(href="/admin" class="btn btn-outline-danger btn-lg" type="submit") Back
+
+        div(class="mb-5")
+            label(class="form-label fs-1") Title
+            input#title(type="text" class="form-control" aria-describedby="basic-addon3 basic-addon4" placeholder="Title" maxlength="255" required)
+        div(class="mb-5")
+            label(class="form-label fs-3") Description
+            textarea#description(type="text" class="form-control" rows="5" placeholder="Description" maxlength="255" required)
+        div(class="mb-5")
+            label(class="form-label fs-3") Link
+            input#link(type="text" class="form-control" placeholder="Link"  maxlength="255")
+        div(class="mb-5")
+            label(class="form-label fs-3") Type
+            select#type(class="form-select" required)
+                option(value="0" selected) Select type of project
+                option(value="1") WORK
+                option(value="2") LAB
+        div(class="mb-5")
+            label(class="form-label fs-3") Tech
+            select#techs-list(class="form-select")
+                option(value="-1" selected)
+            div#used-techs(class="row row-cols-12 mt-3")
+        button#add-project(class="btn btn-primary btn-lg w-100") Add project
+
+                
+
+block javascript 
+    script(src="/static/js/admin/add-project.js") 
