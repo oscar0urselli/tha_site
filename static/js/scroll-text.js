@@ -49,19 +49,19 @@ const content = [
         </div>
         <div id="earth" class=""></div>`
     ],
-    /*[
+    [
         `<div class="mb-3 p-5 bg-body">
             <div class="vstack">
                 <div class="hstack">
                     <h2 class="me-3">1st HighSchools CTF Workshop</h2>
                     <span class="badge bg-success">02/05/2023</span>
                 </div>
-                <p>I helped in the organization of a <a title="ITASEC23" href="https://agenda-2023.itasec.it/track/workshop">workshop and a little CTF for highschool students</a> during ITASEC 2023. In particular, I and others students introduced the basics of cybersecurity. I covered the part related to OSINT.</p>
+                <p>I helped in the organization of a <a title="ITASEC23" href="https://itasec.it/workshops/1st-highschools-ctf-workshop/">workshop</a> and a <a href="https://ctf.itasec.it/">CTF</a> for highschool students during ITASEC 2023. In particular, I and the members of <a href="https://pwnzer0tt1.it/">Pwnzer0tt1</a> and <a href="https://www.mntcrl.it/">M0NT3C4RL0</a> introduced the basics of cybersecurity. I covered the part related to OSINT.</p>
             </div>
         </div>
         <div id="mars" class=""></div>`
     ],
-    [
+    /*[
         `<div class="mb-3 p-5 bg-body">
             <div class="vstack">
                 <div class="hstack">

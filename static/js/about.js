@@ -129,8 +129,8 @@ scene.add(earth);
 
 
 // Mars
-//const mars = new Planet({ radius: 0.7, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 227.8 * 1.5), 25, {texture: '/static/textures/mars.jpg'}).createPlanet('lambert');
-//scene.add(mars);
+const mars = new Planet({ radius: 0.7, widthSegments: 48, heightSegments: 48 }, new THREE.Vector3(0, 0, 227.8 * 1.5), 25, {texture: '/static/textures/mars.jpg'}).createPlanet('lambert');
+scene.add(mars);
 
 
 // Jupiter
@@ -190,7 +190,7 @@ const exploration = [
     {name: 'Mercury', obj: mercury, dPos: new THREE.Vector3(-2, 0, -0.5), expSpeed: 2},
     {name: 'Venus', obj: venus, dPos: new THREE.Vector3(-2, 2, -3), expSpeed: 2},
     {name: 'Earth', obj: earth, dPos: new THREE.Vector3(5, 0, 1), expSpeed: 2.5},
-    //{name: 'Mars', obj: mars, dPos: new THREE.Vector3(0, 0, -1.5), expSpeed: 2.25},
+    {name: 'Mars', obj: mars, dPos: new THREE.Vector3(0, 0, -1.5), expSpeed: 2.25},
     //{name: 'Jupiter', obj: jupiter, dPos: new THREE.Vector3(25, 0, -40), expSpeed: 2},
     //{name: 'Saturn', obj: saturn, dPos: new THREE.Vector3(-30, 5, -50), expSpeed: 2},
     //{name: 'Uranus', obj: uranus, dPos: new THREE.Vector3(10, 10, 20), expSpeed: 3},
@@ -296,7 +296,7 @@ function planetRotation() {
     earthClouds.rotation.x -= 0.000025;
     earthClouds.rotation.z += 0.000025;
     moon.rotation.y += 0.0005;
-    //mars.rotation.y += 0.0001;
+    mars.rotation.y += 0.0001;
     //jupiter.rotation.y += 0.00015;
     //io.rotation.y += 0.0005;
     //europa.rotation.y += 0.0005;
