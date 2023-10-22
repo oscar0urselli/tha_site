@@ -8,7 +8,7 @@ const content = [
                     <h2 class="me-3">Liceo G. Moscati</h2>
                     <span class="badge bg-success">2018 - 2023</span>
                 </div>
-                <p>Here I had a starting approach with C++, during the study I created some web sites for different projects. I also partecipated in various school competitions of chemistry, physics and mathematics.</p>
+                <p>Here I had a starting approach with C++, during the study I created some web sites for different projects. I also partecipated in various school competitions of chemistry, physics and mathematics. I graduated with 100 cum laude.</p>
             </div>
         </div>
         <div id="sun" class=""></div>`
@@ -61,18 +61,30 @@ const content = [
         </div>
         <div id="mars" class=""></div>`
     ],
-    /*[
+    [
         `<div class="mb-3 p-5 bg-body">
             <div class="vstack">
                 <div class="hstack">
                     <h2 class="me-3">OliCyber 2023</h2>
                     <span class="badge bg-success">2023</span>
                 </div>
-                <p>For the <a title="OliCyber23" href="https://olicyber.it/edizioni/2023">second time</a>, I made it to the national finals.</p>
+                <p>For the <a title="OliCyber23" href="https://olicyber.it/edizioni/2023">second time</a>, I made it to the national finals and won the bronze medal.</p>
             </div>
         </div>
         <div id="jupiter" class=""></div>`
-    ]*/
+    ],
+    [
+        `<div class="mb-3 p-5 bg-body">
+            <div class="vstack">
+                <div class="hstack">
+                    <h2 class="me-3">Polytechnic of Bari</h2>
+                    <span class="badge bg-success">2023 - today</span>
+                </div>
+                <p>I'm currently an undergraduate in computer engineering at the <a title="PoliBa" href="https://www.poliba.it/">Polytechnic of Bari</a>.</p>
+            </div>
+        </div>
+        <div id="saturn" class=""></div>`
+    ]
 ];
 
 let counter = 0;
