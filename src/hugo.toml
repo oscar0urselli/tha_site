@@ -1,0 +1,48 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Oscar Urselli'
+theme = "nightfall"
+
+[menu]
+    [[menu.header]]
+        name = "blog"
+        weight = 0
+        url = "blog"
+    [[menu.header]]
+        name = "about"
+        weight = 1
+        url = "about"
+
+
+[params]
+user = "Oscar Urselli"
+hostname = "oscarurselli.com"
+
+    [params.author]
+        name = "Oscar Urselli"
+        email = "studio@oscarurselli.com"
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/oscar0urselli"
+target = "_blank"
+aria = "GitHub Profile"
+
+[[params.social]]
+key = 1
+name = "instagram"
+url = "https://www.instagram.com/oscarurselli"
+aria = "Instagram Profile"
+
+[[params.social]]
+key = 2
+name = "linkedin"
+url = "https://www.linkedin.com/in/oscar-urselli-121a98294/"
+aria = "LinkedIn Profile"
+
+[[params.social]]
+key = 3
+name = "email"
+url = "mailto:studio@oscarurselli.com"
+aria = "My e-Mail Address"
