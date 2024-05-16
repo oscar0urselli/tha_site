@@ -8,8 +8,15 @@
     <language>en-us</language>
     <managingEditor>studio@oscarurselli.com (Oscar Urselli)</managingEditor>
     <webMaster>studio@oscarurselli.com (Oscar Urselli)</webMaster>
-    <lastBuildDate>Mon, 25 Sep 2023 16:08:46 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 16 May 2024 00:06:31 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 16 May 2024 00:06:31 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <guid>http://localhost:1313/about/</guid>
+      <description>~$ whoami Ciao, I&amp;rsquo;m Oscar Urselli from Italy and I&amp;rsquo;m a student of computer engineering.&#xA;~$ cat README.txt My interest for computer started with Minecraft and programming command blocks. Later I was curios on self hosting a Minecraft server and learning more about game development. At the moment these are the languages I know:&#xA;Python - Self-taught during highschool, used for almost everything. I created Discord and Telegram bots, web scrapers, some basic AI with TensorFlow, serial communication with Arduino and mandatory in cybersecurity.</description>
+    </item>
     <item>
       <title>Poliba</title>
       <link>http://localhost:1313/posts/poliba/</link>
