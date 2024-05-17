@@ -1,6 +1,6 @@
 +++
 title = 'Pwnzer0tt1'
-date = 2022-06-30T16:08:40+02:00
+date = 2022-06-30
 draft = false
 descrtiption = 'Creation of a CTF team.'
 +++

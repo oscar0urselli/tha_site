@@ -8,61 +8,61 @@
     <language>en-us</language>
     <managingEditor>studio@oscarurselli.com (Oscar Urselli)</managingEditor>
     <webMaster>studio@oscarurselli.com (Oscar Urselli)</webMaster>
-    <lastBuildDate>Mon, 25 Sep 2023 16:08:46 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 25 Sep 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Poliba</title>
       <link>http://localhost:1313/posts/poliba/</link>
-      <pubDate>Mon, 25 Sep 2023 16:08:46 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <pubDate>Mon, 25 Sep 2023 00:00:00 +0000</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
       <guid>http://localhost:1313/posts/poliba/</guid>
       <description>I&amp;rsquo;m currently an undergraduate in computer engineering at the Polytechnic of Bari.</description>
     </item>
     <item>
       <title>Olicyber 2023</title>
       <link>http://localhost:1313/posts/olicyber-2023/</link>
-      <pubDate>Thu, 07 Sep 2023 16:08:14 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
       <guid>http://localhost:1313/posts/olicyber-2023/</guid>
       <description>For the second time, I made it to the national finals and won the bronze medal.</description>
     </item>
     <item>
       <title>Liceo G. Moscati</title>
       <link>http://localhost:1313/posts/liceo-moscati/</link>
-      <pubDate>Mon, 03 Jul 2023 16:09:08 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <pubDate>Mon, 03 Jul 2023 00:00:00 +0000</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
       <guid>http://localhost:1313/posts/liceo-moscati/</guid>
       <description>Here I had a starting approach with C++, during the study I created some web sites for different projects. I also partecipated in various school competitions of chemistry, physics and mathematics. I graduated with 100 cum laude.</description>
     </item>
     <item>
       <title>Itasec 2023 - 1st Highschool CTF Workshop</title>
       <link>http://localhost:1313/posts/itasec-2023-highschool-workshop/</link>
-      <pubDate>Tue, 02 May 2023 16:09:52 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <pubDate>Tue, 02 May 2023 00:00:00 +0000</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
       <guid>http://localhost:1313/posts/itasec-2023-highschool-workshop/</guid>
       <description>I helped in the organization of a workshop and a CTF for highschool students during ITASEC 2023. In particular, I and the members of Pwnzer0tt1 and M0NT3C4RL0 introduced the basics of cybersecurity. I covered the part related to OSINT.</description>
     </item>
     <item>
       <title>Pwnzer0tt1</title>
       <link>http://localhost:1313/posts/pwnzer0tt1/</link>
-      <pubDate>Thu, 30 Jun 2022 16:08:40 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
       <guid>http://localhost:1313/posts/pwnzer0tt1/</guid>
       <description>After CyberChallenge I and the other members of the team decided to create a CTF team called Pwnzer0tt1.</description>
     </item>
     <item>
       <title>Cyberchallenge 2022</title>
       <link>http://localhost:1313/posts/cyberchallenge-2022/</link>
-      <pubDate>Wed, 29 Jun 2022 16:08:25 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <pubDate>Wed, 29 Jun 2022 00:00:00 +0000</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
       <guid>http://localhost:1313/posts/cyberchallenge-2022/</guid>
       <description>During the same period of the Olicyber, I also took part in this project for universities. Here I passed the selections and entered the official team of the Polytechnic of Bari with other 5 students.</description>
     </item>
     <item>
       <title>Firegex</title>
       <link>http://localhost:1313/posts/firegex/</link>
-      <pubDate>Mon, 27 Jun 2022 15:33:52 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <pubDate>Mon, 27 Jun 2022 00:00:00 +0000</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
       <guid>http://localhost:1313/posts/firegex/</guid>
       <description>Firegex is a firewall that includes different functionalities, created for CTF Attack-Defence competitions that has the aim to limit or totally deny malicious traffic through the use of different kind of filters. More infos at this page&amp;hellip;&#xA;Development started about 2 weeks before the final of CyberChallenge.IT 2022. At the beginning, the idea was of having a way to block potential payload from other players until we where able to patch the exploited vulnerabilities.</description>
     </item>
     <item>
       <title>Olicyber 2022</title>
       <link>http://localhost:1313/posts/olicyber-2022/</link>
-      <pubDate>Sat, 28 May 2022 16:08:09 +0200</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
+      <pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate><author>studio@oscarurselli.com (Oscar Urselli)</author>
       <guid>http://localhost:1313/posts/olicyber-2022/</guid>
       <description>This project was my first encounter with cybersecurity. I managed to pass all the selections and won the bronze medal in the national finals.</description>
     </item>

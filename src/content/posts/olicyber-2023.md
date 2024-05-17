@@ -1,6 +1,6 @@
 +++
 title = 'Olicyber 2023'
-date = 2023-09-07T16:08:14+02:00
+date = 2023-09-07
 draft = false
 description = 'Highschool Italian championship of cybersecurity.'
 +++

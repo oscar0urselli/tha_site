@@ -1,6 +1,6 @@
 +++
 title = 'Cyberchallenge 2022'
-date = 2022-06-29T16:08:25+02:00
+date = 2022-06-29
 draft = false
 description = 'National competion of cybersecurity between universities.'
 +++

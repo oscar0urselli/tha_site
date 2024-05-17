@@ -1,7 +1,9 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://oscarurselli.com/'
+enableRobotsTXT = true
 languageCode = 'en-us'
 title = 'Oscar Urselli'
 theme = "nightfall"
+
 
 [menu]
     [[menu.header]]
@@ -22,6 +24,7 @@ published = false
     [params.author]
         name = "Oscar Urselli"
         email = "studio@oscarurselli.com"
+
 
 [[params.social]]
 key = 0

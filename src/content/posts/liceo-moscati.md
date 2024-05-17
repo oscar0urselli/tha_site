@@ -1,6 +1,6 @@
 +++
 title = 'Liceo G. Moscati'
-date = 2023-07-03T16:09:08+02:00
+date = 2023-07-03
 draft = false
 description = 'Graduation from highschool.'
 +++

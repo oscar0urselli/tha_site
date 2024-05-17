@@ -1,6 +1,6 @@
 +++
 title = 'Itasec 2023 - 1st Highschool CTF Workshop'
-date = 2023-05-02T16:09:52+02:00
+date = 2023-05-02
 draft = false
 description = 'A one day event for highschool students.'
 +++

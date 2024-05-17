@@ -1,14 +1,14 @@
 +++
 title = 'About'
-date = 2024-05-16T00:06:31+02:00
 draft = false
 +++
 
 
-## ~$ whoami
+
+## ~/about$ whoami
 Ciao, I'm Oscar Urselli from Italy and I'm a student of computer engineering.
 
-## ~$ cat README.txt
+## ~/about$ cat README.txt
 My interest for computer started with Minecraft and programming command blocks. Later I was curios on self hosting a Minecraft server and learning more about game development. At the moment these are the languages I know:
  - **Python** - Self-taught during highschool, used for almost everything. I created Discord and Telegram bots, web scrapers, some basic AI with TensorFlow, serial communication with Arduino and mandatory in cybersecurity.
  - **Java** - I'm learning it beacause of a course of algorithm and data structure in university.

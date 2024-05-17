@@ -1,6 +1,6 @@
 +++
 title = 'Poliba'
-date = 2023-09-25T16:08:46+02:00
+date = 2023-09-25
 draft = false
 description = 'Computer engineering'
 +++

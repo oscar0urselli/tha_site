@@ -1,6 +1,6 @@
 +++
 title = 'Firegex'
-date = 2022-06-27T15:33:52+02:00
+date = 2022-06-27
 draft = false
 description = 'Firewall for attack/defense CTFs.'
 +++
