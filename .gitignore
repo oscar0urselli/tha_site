@@ -1,2 +1,4 @@
 *.exe
 .hugo_build.lock
+/src/public/
+/src/resources/_gen/
