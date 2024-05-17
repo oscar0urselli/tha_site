@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://oscarurselli.com/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/poliba/</loc>
+    <loc>https://oscarurselli.com/posts/poliba/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://oscarurselli.com/posts/</loc>
     <lastmod>2023-09-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/olicyber-2023/</loc>
+    <loc>https://oscarurselli.com/posts/olicyber-2023/</loc>
     <lastmod>2023-09-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/liceo-moscati/</loc>
+    <loc>https://oscarurselli.com/posts/liceo-moscati/</loc>
     <lastmod>2023-07-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/itasec-2023-highschool-workshop/</loc>
+    <loc>https://oscarurselli.com/posts/itasec-2023-highschool-workshop/</loc>
     <lastmod>2023-05-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/pwnzer0tt1/</loc>
+    <loc>https://oscarurselli.com/posts/pwnzer0tt1/</loc>
     <lastmod>2022-06-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/cyberchallenge-2022/</loc>
+    <loc>https://oscarurselli.com/posts/cyberchallenge-2022/</loc>
     <lastmod>2022-06-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/firegex/</loc>
+    <loc>https://oscarurselli.com/posts/firegex/</loc>
     <lastmod>2022-06-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/olicyber-2022/</loc>
+    <loc>https://oscarurselli.com/posts/olicyber-2022/</loc>
     <lastmod>2022-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://oscarurselli.com/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://oscarurselli.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://oscarurselli.com/tags/</loc>
   </url>
 </urlset>
