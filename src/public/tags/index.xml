@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Oscar Urselli</title>
+    <link>https://oscarurselli.com/tags/</link>
+    <description>Recent content in Tags on Oscar Urselli</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <managingEditor>studio@oscarurselli.com (Oscar Urselli)</managingEditor>
+    <webMaster>studio@oscarurselli.com (Oscar Urselli)</webMaster>
+    <atom:link href="https://oscarurselli.com/tags/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
