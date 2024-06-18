@@ -19,4 +19,4 @@ My interest for computer started with Minecraft and programming command blocks. 
  - **Solidity**: I have a strong interest towards blockchain and the technology behind it, so it made sense to also learn one of the most used language for the creation of smart contract.
  - **Docker**: Started learning about it during the training for CyberChallenge.IT, now I use it during development and for production.
 
-*I use Ubuntu by the way.*
+*I use Debian by the way.*
