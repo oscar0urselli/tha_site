@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Web Security tutor - Cyberchallenge 2025",
+        "date": "2025-03-20",
+        "description": "Tutoring activity in web security for Cyberchallenge 2025 at Polytechnic of Bari.",
+        "body": "I participated as a tutor of Cyberchallenge.IT 2025. As the last edition I was responsible for the training in the category of web security."
+    },
+    {
+        "title": "Web Security tutor - Cyberchallenge 2024",
+        "date": "2024-04-10",
+        "description": "Tutoring activity in web security for Cyberchallenge 2024 at Polytechnic of Bari.",
+        "body": "In the 2024 edition of Cyberchallenge.IT i partecipated as a tutor and I held lessons about web security. With me there were also other memebers of Pwnzer0tt1 who trained participants on cryptography, software and network security."
+    },
+    {
+        "title": "Poliba",
+        "date": "2023-09-25",
+        "description": "Computer engineering",
+        "body": "I'm currently an undergraduate in computer engineering at the [Polytechnic of Bari](https://www.poliba.it/)."
+    },
+    {
+        "title": "Olicyber 2023",
+        "date": "2023-09-07",
+        "description": "Highschool Italian championship of cybersecurity.",
+        "body": "For the [second time](https://olicyber.it/edizioni/2023), I made it to the national finals and won the bronze medal."
+    },
+    {
+        "title": "Liceo G. Moscati",
+        "date": "2023-07-03",
+        "description": "Graduation from highschool.",
+        "body": "Here I had a starting approach with C++, during the study I created some web sites for different projects. I also partecipated in various school competitions of chemistry, physics and mathematics. I graduated with 100 cum laude."
+    },
+    {
+        "title": "Itasec 2023 - 1st Highschool CTF Workshop",
+        "date": "2023-05-02",
+        "description": "A one day event for highschool students.",
+        "body": "I helped in the organization of a [workshop](https://itasec.it/workshops/1st-highschools-ctf-workshop/) and a [CTF](https://ctf.itasec.it/) for highschool students during ITASEC 2023. In particular, I and the members of [Pwnzer0tt1](https://pwnzer0tt1.it/) and [M0NT3C4RL0](https://www.mntcrl.it/) introduced the basics of cybersecurity. I covered the part related to OSINT."
+    },
+    {
+        "title": "Pwnzer0tt1",
+        "date": "2022-06-30",
+        "description": "Creation of a CTF team.",
+        "body": "After CyberChallenge I and the other members of the team decided to create a CTF team called [Pwnzer0tt1](https://pwnzer0tt1.it/)."
+    },
+    {
+        "title": "Cyberchallenge 2022",
+        "date": "2022-06-29",
+        "description": "National competion of cybersecurity between universities.",
+        "body": "During the same period of the Olicyber, I also took part in [this project for universities](https://cyberchallenge.it/halloffame/2022). Here I passed the selections and entered the official team of the [Polytechnic of Bari](https://www.poliba.it/) with other 5 students."
+    },
+    {
+        "title": "Firegex",
+        "date": "2022-06-27",
+        "description": "Firewall for attack/defense CTFs",
+        "body": "*Firegex is a firewall that includes different functionalities, created for CTF Attack-Defence competitions that has the aim to limit or totally deny malicious traffic through the use of different kind of filters.* More infos at this [page](https://github.com/Pwnzer0tt1/firegex)...\n\nDevelopment started about 2 weeks before the final of [CyberChallenge.IT 2022](https://cyberchallenge.it/attack-defense/2022). At the beginning, the idea was of having a way to block potential payload from other players until we where able to patch the exploited vulnerabilities.\n\nNow, the project has evolved and is capable of doing much more than simply dropping packet based on a set of regular expressions."
+    },
+    {
+        "title": "Olicyber 2022",
+        "date": "2022-05-28",
+        "description": "Highschool Italian championship of cybersecurity.",
+        "body": "[This project](https://olicyber.it/edizioni/2022) was my first encounter with cybersecurity. I managed to pass all the selections and won the bronze medal in the national finals."
+    }
+]
