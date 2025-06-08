@@ -1,0 +1,1 @@
+For the [second time](https://olicyber.it/edizioni/2023), I made it to the national finals and won the bronze medal.

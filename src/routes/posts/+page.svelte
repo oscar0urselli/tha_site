@@ -3,8 +3,10 @@
     import posts from "$lib/posts.json";
 </script>
 
+<title>Posts | Oscar Urselli</title>
+
 <h2 class="ibm-plex-mono-semibold">~/posts$ ls -l</h2>
 
 {#each Object.entries(posts) as [i, p]}
-    <PostCard index={i} title={p.title} date={p.date} description={p.description} />
+    <PostCard index={Number(i)} post={p} />
 {/each}

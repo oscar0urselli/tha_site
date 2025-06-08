@@ -1,3 +1,5 @@
+<title>About | Oscar Urselli</title>
+
 <h2 class="ibm-plex-mono-semibold">~/about$ whoami</h2>
 <p class="ibm-plex-mono-regular">Ciao, I’m Oscar Urselli from Italy and I’m a student of computer engineering.</p>
 

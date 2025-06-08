@@ -1,11 +1,20 @@
 <script lang="ts">
-    let { index, title, date, description } = $props();
+    let { index, post }: {
+        index: number,
+        post: {
+            title: string,
+            date: string,
+            description: string
+        }
+    } = $props();
 </script>
 
-<div class="card border-0 shadow-lg my-4">
-    <div class="card-body">
-        <a href="/posts/{index}"><h5 class="card-title ibm-plex-mono-medium">{title}</h5></a>
-        <p class="card-text ibm-plex-mono-regular">{description}</p>
-        <p class="ibm-plex-mono-light">{date}</p>
+<a href="/posts/{index}" class="link-underline link-underline-opacity-0">
+    <div class="card my-4 rounded-0">
+        <div class="card-body">
+            <h5 class="card-title ibm-plex-mono-medium">{post.title}</h5>
+            <p class="card-text ibm-plex-mono-regular">{post.description}</p>
+            <p class="ibm-plex-mono-light">{post.date}</p>
+        </div>
     </div>
-</div>
+</a>

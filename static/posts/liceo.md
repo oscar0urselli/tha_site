@@ -1,0 +1,1 @@
+Here I had a starting approach with C++, during the study I created some web sites for different projects. I also partecipated in various school competitions of chemistry, physics and mathematics.
