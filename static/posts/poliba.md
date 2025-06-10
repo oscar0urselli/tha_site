@@ -1,0 +1,1 @@
+I'm currently an undergraduate in computer engineering at the [Polytechnic of Bari](https://www.poliba.it/).
