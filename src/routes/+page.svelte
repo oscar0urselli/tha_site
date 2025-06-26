@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-    import posts from "$lib/posts.json";
-	import PostCard from "$lib/components/PostCard.svelte";
+	import posts from "$lib/posts.json";
+    import PostCard from "$lib/components/PostCard.svelte";
 
     let mode = "";
     onMount(() => {
@@ -40,8 +40,8 @@
     </div>
     <div>
         <h3>Latest posts:</h3>
-        <PostCard index={0} post={posts[0]} />
-        <PostCard index={1} post={posts[1]} />
-        <PostCard index={2} post={posts[2]} />
+        <PostCard post={posts[posts.length - 1]} />
+        <PostCard post={posts[posts.length - 2]} />
+        <PostCard post={posts[posts.length - 3]} />
     </div>    
 </div>

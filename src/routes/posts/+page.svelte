@@ -7,6 +7,6 @@
 
 <h2 class="ibm-plex-mono-semibold">~/posts$ ls -l</h2>
 
-{#each Object.entries(posts) as [i, p]}
-    <PostCard index={Number(i)} post={p} />
+{#each Object.keys(posts) as i}
+    <PostCard post={posts[posts.length - Number(i) - 1]} />
 {/each}
